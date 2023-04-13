@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Youth Divergent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="navbar">
+    <img src="img/logo.png" id="navbar-logo">
+    <p id="navbar-brand">Organization</p>
+  </div>
+  <div id="showcase">
+    <img src="img/showcase.gif" alt="" id="showcase-media">
+    <div id="showcase-filter"></div>
+    <div id="showcase-text">
+      <div id="showcase-title">
+        <p>Youth Divergent</p>
+        <p>&times;</p>
+        <p>AdvoKada</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <section id="header">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="row gap-2 align-items-center justify-content-center">
+        <div class="col-md-6 col-lg-6">
+          <p id="header-title">Bringing youth to God's vision.</p>
+          <p id="header-subtitle">Youth Divergent, in partnership with the AdvoKada Organization, is a youth organization that helps lead young people towards God's vision and words.</p>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img/map.png" alt="" id="map-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="d-flex justify-content-center align-items-center">
+      <button class="tab-btn active" onclick="showOverview(event, 1)">Youth Divergent</button>
+      <button class="tab-btn" onclick="showOverview(event, 2)">AdvoKada</button>
+    </div>
+  </section>
+  <section id="section-yd">
+    <p class="overview-text">Youth Divergent is a service in TGBTG Church Mabuhay Outreach where students from any school campuses gather to learn the word of God.</p>
+    <p class="overview-title">Behind Youth Divergent</p>
+    <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+      <img src="img/yd-head.jpg" alt="Chairman" class="overview-img">
+      <div class="container">
+        <p class="overview-name"><b>Efren Jeffrey Obligacion</b></p>
+        <p class="overview-name">Chairman of Youth Divergent</p>
+      </div>
+    </div>
+  </section>
+  <section id="section-ako">
+    <p class="overview-text">AdvoKada is a youth organization that partners with Youth Divergent to support DepEd's core values. It helps students learn the word of God in an educational manner.</p>
+    <p class="overview-title">Behind AdvoKada</p>
+    <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+      <img src="img/ako-head.jpg" alt="Chairperson" class="overview-img">
+      <div class="container">
+        <p class="overview-name"><b>Paul Symon Fruto</b></p>
+        <p class="overview-name">Chairperson of AdvoKada</p>
+      </div>
+    </div>
+  </section>
+  <section id="section-gray">
+    <div class="overview-title">Administrators</div>
+    <div class="d-flex justify-content-center">
+      <div class="col-4 col-lg-3 d-flex justify-content-center">
+        <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+          <img src="img/mod-rj.jpg" alt="" class="mod-img">
+          <p class="mod-name">Tatay RJ</p>
+        </div>
+      </div>
+      <div class="col-4 col-lg-3 d-flex justify-content-center">
+        <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+          <img src="img/mod-pam.jpg" alt="" class="mod-img">
+          <p class="mod-name">Ate Pam</p>
+        </div>
+      </div>
+      <div class="col-4 col-lg-3 d-flex justify-content-center">
+        <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+          <img src="img/mod-bj.jpg" alt="" class="mod-img">
+          <p class="mod-name">Kuya BJ</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <button class="btn btn-outline-dark rounded-0" id="mod-btn"><small>View all staff</small></button>
+    </div>
+    <br><br><br><br><br>
+    <div class="d-flex justify-content-center">
+      <div class="row p-0 m-0 d-flex justify-content-center align-items-center gap-5" id="gray-row">
+        <div class="col-lg-3 d-flex flex-column align-items-center justify-content-center">
+          <img src="img/track-temp.png" alt="Tracks" class="temp-img">
+          <p class="temp-title text-center">Worship Songs</p>
+          <p class="temp-subtitle">Currently, Youth Divergent has released 4 worship songs on Spotify.</p>
+          <button class="btn btn-outline-dark temp-btn"><small>Worship Songs</small></button>
+        </div>
+        <div class="col-lg-3 d-flex flex-column align-items-center justify-content-center">
+          <img src="img/merch-temp.png" alt="Merch" class="temp-img">
+          <p class="temp-title text-center">Merchandise</p>
+          <p class="temp-subtitle">Youth Divergent has a merchandise store on Shopee with affordable prices.</p>
+          <button class="btn btn-outline-dark temp-btn"><small>Merchandise</small></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="vendor/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>
