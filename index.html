@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Youth Divergent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="navbar">
+    <img src="img/fav/logo.png" id="navbar-logo">
+    <p id="navbar-brand">Organization</p>
+    <div id="navbar-menu" data-bs-target="#offcanvas-menu" data-bs-toggle="offcanvas">
+      <p>Menu</p>
+      <i class="fas fa-bars" id="navbar-icon"></i>
+    </div>
+    <div id="navbar-option">
+      <button class="custom" onclick="openInfoSect()">Find Us</button>
+      <button class="custom" onclick="openProductSect">Products</button>
+      <button class="custom" onclick="openEvents()">Events</button>
+    </div>
+  </div>
+  <div id="header">
+    <img src="img/header.gif" id="header-media">
+    <div id="header-filter"></div>
+    <p id="header-title">Youth Divergent<br>&amp; AdvoKada</p>
+  </div>
+  <br><br>
+  <section id="overview" class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-5 col-11">
+        <p id="overview-title">Bringing youth to God's vision</p>
+        <p id="overview-subtitle">Youth Divergent is a youth organization where we help guide young people towards God's vision from various school campuses, empowering them to build better relationships with God and others.</p>
+      </div>
+      <div class="col-lg-5 col-11">
+        <div class="d-flex justify-content-center align-items-center">
+          <button class="overview-btn" onclick="prevHead()">&#x27e8;</button>
+          <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+            <img src="#" id="overview-img">
+            <div class="container">
+              <p id="overview-name"></p>
+              <p id="overview-text"></p>
+            </div>
+          </div>
+          <button class="overview-btn" onclick="nextHead()">&#x27e9;</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-center align-items-center" id="about-us">
+      <button class="active" onclick="showOverview(event, 1)">Youth<br>Divergent</button>
+      <button onclick="showOverview(event, 2)">AdvoKada</button>
+    </div>
+    <div id="overview-yd">
+      <p class="overview-text">Youth Divergent is a service in TGBTG Church Mabuhay Outreach where students from any school campuses gather to learn the word of God.</p>
+      </div>
+    </div>
+    <div id="overview-ako">
+      <p class="overview-text">AdvoKada is a youth organization which support DepEd's core values. It helps students learn the word of God in an educational manner.</p>
+      </div>
+    </div>
+  </section>
+  <section id="products">
+    <br><br>
+    <div class="d-flex justify-content-center">
+      <div class="row p-0 m-0 d-flex justify-content-center align-items-center" id="product-row">
+        <div class="col-lg-5 d-flex flex-column align-items-center justify-content-center" id="tracks">
+          <img src="img/product/track.png" alt="Tracks" class="product-img">
+          <p class="product-title text-center">Worship Songs</p>
+          <p class="product-subtitle">Currently, Youth Divergent has released 4 worship songs on Spotify.</p>
+          <button onclick="openPlayer()">Play Now</button>
+        </div>
+        <div class="col-lg-5 d-flex flex-column align-items-center justify-content-center" id="merch">
+          <img src="img/product/merch.png" alt="Merch" class="product-img">
+          <p class="product-title text-center">Merchandise</p>
+          <p class="product-subtitle">Youth Divergent has an affordable merchandise store on Shopee.</p>
+          <button onclick="openProduct()">Show Now</button>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+  <section id="section-info">
+    <br>
+    <div class="d-flex justify-content-center align-items-center">
+      <img src="img/info.png" id="info-img">
+    </div>
+    <p id="info-text">You can find us in in 65Q5+63G, Mabuhay City Main Rd, Cabuyao, Laguna (<a target="_blank" href="https://maps.app.goo.gl/VZisRHe3ekgh5W869">Google Maps</a>). We're open around 1PM to 4PM every Sunday in TGBTG Mabuhay Outreach.</p>
+    <br>
+    <div class="d-flex justify-content-center align-items-center gap-3">
+      <a href="https://www.facebook.com/YouthDivergent"><img src="img/fav/facebook.png" alt="Facebook" width="20vw"></a>
+      <a href="https://twitter.com/YouthDivergent"><img src="img/fav/twitter.png" alt="Twitter" width="20vw"></a>
+      <a href="https://instagram.com/youthdivergent.official"><img src="img/fav/instagram.png" alt="Instagram" width="20vw"></a>
+      <a href="https://tiktok.com/@youthdivergentofficial"><img src="img/fav/tiktok.png" alt="TikTok" width="20vw"></a>
+      <a href="https://youtube.com/@YouthDivergentTV"><img src="img/fav/youtube.png" alt="YouTube" width="20vw"></a>
+      <a href="https://open.spotify.com/artist/4EanRKdnu42mANXjPa6M08"><img src="img/fav/spotify.png" alt="Spotify" width="20vw"></a>
+    </div>
+    <br>
+  </section>
+  <section id="section-online">
+    <p id="online-title">Youth Divergent Online</p>
+    <p id="online-subtitle">Youth Divergent can be found live online on Facebook every Sunday, from before the start of the service until the end.</p>
+    <div class="d-flex justify-content-center" onclick="openLive()">
+      <button id="online-btn" class="custom">Watch Live</button>
+    </div>
+  </section>
+  <section id="section-events">
+    <img src="img/events.jpg" id="events-bg">
+    <div id="events-filter"></div>
+    <div id="events-content">
+      <p id="events-title">Upcoming Events</p>
+      <p id="events-subtitle">Catch the excitement as we hosts a series of events. Take a look at the event list to see the upcoming schedule.</p>
+      <button class="btn btn-outline-light rounded-0 custom" id="events-btn" onclick="openEvents()">See Event List</button>
+    </div>
+  </section>
+  <section id="section-footer">
+    <div class="d-flex justify-content-center align-items-center flex-column cursor-pointer" onclick="location.refresh()">
+      <img src="img/fav/logo-w.png" id="footer-logo">
+      <strong>ORGANIZATION</strong>
+    </div><br>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="row gap-3 justify-content-center">
+        <div class="col-lg-3">
+          <strong>Contents</strong>
+          <p><a href="#header">About Us</a></p>
+          <p><a href="#products">Products</a></p>
+          <p><a href="#section-info">Place Info</a></p>
+          <p><a href="#section-online">Online</a></p>
+          <p><a href="#section-events">Events</a></p>
+        </div>
+        <div class="col-lg-3">
+          <strong>Socials</strong>
+          <p><a href="https://www.facebook.com/YouthDivergent">Facebook (YD)</a></p>
+          <p><a href="https://www.facebook.com/AdvoKadaPH">Facebook (AKO)</a></p>
+          <p><a href="https://twitter.com/YouthDivergent">Twitter</a></p>
+          <p><a href="https://instagram.com/youthdivergent.official">Instagram</a></p>
+          <p><a href="https://tiktok.com/@youthdivergentofficial">TikTok</a></p>
+          <p><a href="https://youtube.com/@YouthDivergentTV">YouTube</a></p>
+          <p><a href="https://open.spotify.com/artist/4EanRKdnu42mANXjPa6M08">Spotify</a></p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+  <div class="position-fixed bottom-0 start-0 container-fluid align-items-center" id="player">
+    <img src="#" class="player-cover rounded" id="track-cover" onclick="openPlayer()">
+    <div class="flex-grow-1" onclick="openPlayer()">
+      <p class="player-title" id="track-title">Track Title</p>
+      <p class="player-subtitle">Youth Divergent</p>
+    </div>
+    <div class="d-flex justify-content-center align-items-center me-2" id="player-controls">
+      <i class="fas fa-pause" onclick="controlTrack()" id="player-control"></i>
+      <i class="fas fa-forward-step" onclick="playNextTrack()"></i>
+      <i class="fas fa-close" onclick="playerClose()"></i>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-bottom h-100" id="offcanvas-player">
+    <div class="offcanvas-body">
+      <div class="p-2" data-bs-dismiss="offcanvas">
+        <i class="fas fa-close fs-5"></i>
+      </div><br>
+      <div id="playlist"></div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-bottom h-100" id="offcanvas-events">
+    <div class="offcanvas-body">
+      <div class="p-2" data-bs-dismiss="offcanvas">
+        <i class="fas fa-close fs-5"></i>
+      </div><br>
+      <ul id="event-list" class="list-group list-group-flush"></ul>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end w-75" id="offcanvas-menu">
+    <div class="offcanvas-body m-0 p-0">
+      <img src="img/youth-divergent.jpg" id="menu-img">
+      <br>
+      <div class="d-flex justify-content-center">
+        <img src="img/info.png" id="menu-brand">
+      </div>
+      <br>
+      <ul class="list-group list-group-flush" data-bs-dismiss="offcanvas">
+        <li class="list-group-item bg-transparent border-0">
+          <button class="custom menu-btn" onclick="openInfoSect()">Find Us</button>
+        </li>
+        <li class="list-group-item bg-transparent border-0">
+          <button class="custom menu-btn" onclick="openProductSect()">Products</button>
+        </li>
+        <li class="list-group-item bg-transparent border-0" onclick="openEvents()">
+          <button class="custom menu-btn">Events</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-storage.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="vendor/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>
